@@ -2,7 +2,6 @@ import json
 import csv
 import requests
 
-
 urlBusca = 'https://jira.bradesco.com.br:8443/rest/api/2/search?jql=filter='
 urlFilter = 'https://jira.bradesco.com.br:8443/rest/api/2/filter/'
 
@@ -15,7 +14,7 @@ headers = {
 }
 
 usuario = 'm232682'
-senha = 'senha09'
+senha = ''
 
 filtroId = []
 filtroName = ['Vila','Value Stream','Squad','Referência']
