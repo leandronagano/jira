@@ -1,0 +1,80 @@
+{
+    "filtros": [
+        {
+            "id": "32412",
+            "isTeam": false
+        },
+        {
+            "id": "32419",
+            "isTeam": false
+        },
+        {
+            "id": "32413",
+            "isTeam": true
+        },
+        {
+            "id": "32416",
+            "isTeam": true
+        },
+        {
+            "id": "32417",
+            "isTeam": true
+        },
+        {
+            "id": "32418",
+            "isTeam": true
+        },
+        {
+            "id": "32420",
+            "isTeam": true
+        },
+        {
+            "id": "32421",
+            "isTeam": true
+        },
+        {
+            "id": "32422",
+            "isTeam": true
+        },
+        {
+            "id": "32423",
+            "isTeam": true
+        },
+        {
+            "id": "32427",
+            "isTeam": true
+        },
+        {
+            "id": "32428",
+            "isTeam": true
+        },
+        {
+            "id": "32429",
+            "isTeam": true
+        },
+        {
+            "id": "32432",
+            "isTeam": false
+        },
+        {
+            "id": "32437",
+            "isTeam": false
+        },
+        {
+            "id": "32433",
+            "isTeam": true
+        },
+        {
+            "id": "32434",
+            "isTeam": true
+        },
+        {
+            "id": "32435",
+            "isTeam": true
+        },
+        {
+            "id": "32436",
+            "isTeam": true
+        }
+    ]
+}

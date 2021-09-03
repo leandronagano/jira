@@ -1,0 +1,68 @@
+json dos projetos
+    - estrutura
+        [
+            {
+                "Vila": "Nome da Vila",
+                "VS": [
+                    {
+                        "name": "Nome Value Stream"
+                        "squads": [
+                            {
+                            "name": "nome 1",
+                            "filtro": "project = ASD and team ~ 'asdasd'"
+                            },
+                            {
+                            "name": "nome 2",
+                            "filtro": "project = ASD and team ~ 'asdasd'"
+                            }
+
+                        ]
+                    },
+                    {
+                        "name": "Nome Value Stream"
+                        "squads": [
+                            {
+                            "name": "nome 1",
+                            "filtro": "project = ASD and team ~ 'asdasd'"
+                            },
+                            {
+                            "name": "nome 2",
+                            "filtro": "project = ASD and team ~ 'asdasd'"
+                            }
+
+                        ]
+                    }
+                ]
+            }
+        ]
+
+Filtros
+Velocidade
+    Sem Time
+    https://jira.bradesco.com.br:8443/issues/?filter=32412
+    https://jira.bradesco.com.br:8443/issues/?filter=32419
+    Com time
+    https://jira.bradesco.com.br:8443/issues/?filter=32413
+    https://jira.bradesco.com.br:8443/issues/?filter=32416
+    https://jira.bradesco.com.br:8443/issues/?filter=32417
+    https://jira.bradesco.com.br:8443/issues/?filter=32418
+    https://jira.bradesco.com.br:8443/issues/?filter=32420
+    https://jira.bradesco.com.br:8443/issues/?filter=32421
+    https://jira.bradesco.com.br:8443/issues/?filter=32422
+    https://jira.bradesco.com.br:8443/issues/?filter=32423
+
+Eficiência
+    https://jira.bradesco.com.br:8443/issues/?filter=32427
+    https://jira.bradesco.com.br:8443/issues/?filter=32428
+    https://jira.bradesco.com.br:8443/issues/?filter=32429
+
+Qualidade
+    Sem time
+    https://jira.bradesco.com.br:8443/issues/?filter=32432
+    https://jira.bradesco.com.br:8443/issues/?filter=32437
+
+    com time
+    https://jira.bradesco.com.br:8443/issues/?filter=32433
+    https://jira.bradesco.com.br:8443/issues/?filter=32434
+    https://jira.bradesco.com.br:8443/issues/?filter=32435
+    https://jira.bradesco.com.br:8443/issues/?filter=32436
