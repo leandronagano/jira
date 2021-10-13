@@ -1,0 +1,97 @@
+[
+    {
+        "id": "32412",
+        "jql": "issuetype = Epic AND status not in (Identificado, Cancelada) AND cf[10214] is EMPTY AND createdDate >= startOfYear()",
+        "isTeam": false
+    },
+    {
+        "id": "32419",
+        "jql": "status not in (\"Product Backlog\", Cancelada) AND issuetype in (Story, \"New Feature\", Improvement, \"Non Functional Task\", Bug, \"Legacy Bug\", Requirement) AND cf[10214] is EMPTY",
+        "isTeam": false
+    },
+    {
+        "id": "32413",
+        "jql": "issueFunction in epicsOf(\"issuetype = story and statusCategory != 'To Do'\") AND status = Identificado AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32416",
+        "jql": "issuetype = epic AND status in (Identificado, Priorizado, \"Em Descoberta\", Descoberto) AND issueFunction in epicsOf(\"issuetype = Story and status not in ('Product Backlog','Selecionado para Grooming','Em An\u00e1lise','An\u00e1lise Realizada','Pronta para Desenvolvimento',Cancelada)\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32417",
+        "jql": "issueFunction not in epicsOf(\"status not in (Homologada,'Em deploy para produ\u00e7\u00e3o','Em Produ\u00e7\u00e3o',Ativada,Cancelada)\") AND status not in (Executado, \"Em Medi\u00e7\u00e3o\", Validado, Invalidado, Cancelada) AND issueFunction in epicsOf(\"summary is not EMPTY\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32418",
+        "jql": "issueFunction not in epicsOf(\"status not in ('Em produ\u00e7\u00e3o', Ativada,Cancelada)\") AND status not in (\"Em Medi\u00e7\u00e3o\", Cancelada, Validado, Invalidado) AND issueFunction in epicsOf(\"summary is not EMPTY\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32420",
+        "jql": "issuetype in (Story, \"Non Functional Task\", Improvement) AND issueFunction in parentsOf(\"status not in ('A Fazer', Cancelada) and issuetype in (Sub-Imp)\") AND status in (\"A Fazer\", \"Product Backlog\", \"Selecionado para Grooming\", \"Em An\u00e1lise\", \"Solu\u00e7\u00e3o T\u00e9cnica Definida\", \"An\u00e1lise Realizada\", \"Pronta para Desenvolvimento\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32421",
+        "jql": "issuetype in (Story) AND status in (\"Em Desenvolvimento\", \"Pronta para Desenvolvimento\", \"Em An\u00e1lise\", \"Selecionado para Grooming\", \"Product Backlog\") AND issueFunction in parentsOf(\"issuetype = Sub-Imp and status = Finalizado\") AND issueFunction not in parentsOf(\"issuetype = Sub-Imp and status != Finalizado\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32422",
+        "jql": "issuetype in (Story) AND status in (\"Product Backlog\", \"Selecionado para Grooming\", \"Em An\u00e1lise\", \"An\u00e1lise realizada\", \"Pronta para Desenvolvimento\", \"Em Desenvolvimento\", Desenvolvida, \"Em deploy para teste\", \"Em teste\") AND issueFunction in parentsOf(\"(issuetype in (Sub-Imp,Sub-Test) and status = Finalizado) or (issuetype = Sub-Bug and 'Development Phase' = DEV and status = Finalizado)\") AND issueFunction not in parentsOf(\"(issuetype in (Sub-Imp,Sub-Test) and status != Finalizado) or (issuetype = Sub-Bug and 'Development Phase' = DEV and status != Finalizado)\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32423",
+        "jql": "issuetype in (Story) AND status in (\"Product Backlog\", \"Selecionado para Grooming\", \"Em An\u00e1lise\", \"An\u00e1lise realizada\", \"Pronta para Desenvolvimento\", \"Em Desenvolvimento\", Desenvolvida, \"Em deploy para teste\", \"Em teste\", Testada, \"Em deploy para homologa\u00e7\u00e3o\", \"Em homologa\u00e7\u00e3o\") AND issueFunction in parentsOf(\"(issuetype in (Sub-Imp,Sub-Test) and status = Finalizado) or (issuetype = Sub-Bug and 'Development Phase' = UAT and status = Finalizado)\") AND issueFunction not in parentsOf(\"(issuetype in (Sub-Imp,Sub-Test) and status != Finalizado) or (issuetype = Sub-Bug and 'Development Phase' = UAT and status != Finalizado)\") AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32427",
+        "jql": "status not in (\"Product Backlog\", Open, Cancelada, \"Selecionado para Grooming\", \"Em An\u00e1lise\", \"An\u00e1lise Realizada\") AND issuetype in (Story) AND \"Pontos de Fun\u00e7\u00e3o\" is EMPTY AND \"Complexity Points\" is EMPTY AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32428",
+        "jql": "status in (Testada, \"Em deploy para homologa\u00e7\u00e3o\", \"Em homologa\u00e7\u00e3o\", Homologada, \"Em deploy para produ\u00e7\u00e3o\") AND issuetype in (Story) AND \"Pontos de Fun\u00e7\u00e3o\" is EMPTY AND \"Complexity Points\" is EMPTY AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32429",
+        "jql": "status in (\"Em Produ\u00e7\u00e3o\", Ativada) AND issuetype in (Story) AND \"Pontos de Fun\u00e7\u00e3o\" is EMPTY AND \"Complexity Points\" is EMPTY AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32432",
+        "jql": "issuetype in (bug, Sub-Bug) AND cf[10214] is EMPTY AND status not in (Cancelada) AND createdDate >= startOfYear()",
+        "isTeam": false
+    },
+    {
+        "id": "32437",
+        "jql": "filter = JiraBurn AND cf[10214] is EMPTY AND timespent > 0 AND createdDate >= startOfYear()",
+        "isTeam": false
+    },
+    {
+        "id": "32433",
+        "jql": "issuetype in (bug, Sub-Bug) AND \"Development Phase\" is EMPTY AND status not in (Cancelada) AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32434",
+        "jql": "status not in (\"Product Backlog\", Open, Cancelada, \"Selecionado para Grooming\", \"Em An\u00e1lise\", \"An\u00e1lise Realizada\") AND issuetype in (Story) AND \"Pontos de Fun\u00e7\u00e3o\" is EMPTY AND \"Complexity Points\" is EMPTY AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32435",
+        "jql": "issuetype in (Sub-Bug, \"Sub-Legacy Bug\", bug, \"Legacy Bug\") AND status in (Finalizado, \"Em produ\u00e7\u00e3o\", Ativada) AND issueFunction not in hasSubtasks() AND (timespent = 0 OR timespent is EMPTY) AND createdDate >= startOfYear()",
+        "isTeam": true
+    },
+    {
+        "id": "32436",
+        "jql": "filter = JiraBurn AND originalEstimate > 0 AND (timespent is EMPTY OR timespent = 0) AND statusCategory = Done AND createdDate >= startOfYear() AND status not in (cancelada)",
+        "isTeam": true
+    }
+]
